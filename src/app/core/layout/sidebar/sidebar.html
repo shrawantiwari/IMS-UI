@@ -1,0 +1,53 @@
+<aside class="sidebar" [class.collapsed]="collapsed()">
+  <nav class="sidebar-nav" aria-label="Main navigation">
+    <a
+      routerLink="/dashboard"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      aria-label="Dashboard"
+    >
+      <mat-icon>dashboard</mat-icon>
+      <span class="menu-label">Dashboard</span>
+    </a>
+
+    <a routerLink="/products" routerLinkActive="active" aria-label="Products">
+      <mat-icon>inventory_2</mat-icon>
+      <span class="menu-label">Products</span>
+    </a>
+
+    <a routerLink="/inventory" routerLinkActive="active" aria-label="Inventory">
+      <mat-icon>warehouse</mat-icon>
+      <span class="menu-label">Inventory</span>
+    </a>
+
+    <a routerLink="/suppliers" routerLinkActive="active" aria-label="Suppliers">
+      <mat-icon>local_shipping</mat-icon>
+      <span class="menu-label">Suppliers</span>
+    </a>
+
+    <a routerLink="/purchases" routerLinkActive="active" aria-label="Purchases">
+      <mat-icon>shopping_cart</mat-icon>
+      <span class="menu-label">Purchases</span>
+    </a>
+
+    <a routerLink="/sales" routerLinkActive="active" aria-label="Sales">
+      <mat-icon>point_of_sale</mat-icon>
+      <span class="menu-label">Sales</span>
+    </a>
+
+    <a routerLink="/customers" routerLinkActive="active" aria-label="Customers">
+      <mat-icon>people</mat-icon>
+      <span class="menu-label">Customers</span>
+    </a>
+
+    <a routerLink="/reports" routerLinkActive="active" aria-label="Reports">
+      <mat-icon>assessment</mat-icon>
+      <span class="menu-label">Reports</span>
+    </a>
+
+    <a routerLink="/user-management" routerLinkActive="active" aria-label="User Management">
+      <mat-icon>manage_accounts</mat-icon>
+      <span class="menu-label">User Management</span>
+    </a>
+  </nav>
+</aside>

@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="header-left">
+    <button mat-icon-button type="button" aria-label="Toggle navigation" (click)="toggleMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="header-brand">
+      <span class="brand-name">Inventory Management System</span>
+    </div>
+  </div>
+
+  <div class="header-user">
+    <button mat-button [matMenuTriggerFor]="userMenu" aria-label="Open user menu">
+      <mat-icon>account_circle</mat-icon>
+      <span>{{ user()?.email }}</span>
+    </button>
+
+    <mat-menu #userMenu="matMenu">
+      <button mat-menu-item (click)="logout()">
+        <mat-icon>logout</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </div>
+</header>
